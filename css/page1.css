@@ -1,0 +1,21 @@
+
+    .home-introduction {
+        width: 80%; height: 100%; margin: 0 auto;
+    }
+
+    .home-introduction div {
+        width: 800px;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .home-introduction div h1{
+        font-size: 17pt;
+        margin-top: 30px;
+        text-align: center;
+        font-family: serif;
+    }
+    .home-introduction div h1.no-typing-div {
+        display: none;
+    }

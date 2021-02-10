@@ -1,0 +1,62 @@
+
+#page2 .page2-div {
+    height: 100%; margin: 0 auto;
+}
+
+.page2-container {
+    width: 100%; height: 100%; display: flex; align-items: center; position: relative
+}
+
+.page2-c-left {
+    position: relative;width: 30%; height: 100%; background: #D0D0D0; border-radius: 10px;
+}
+
+.page2-c-left-div {
+    position: absolute; top: 3%; left: 4%; width: 92%; height: 94%; background: #E5E5E5; border-radius: 10px; display: flex; align-items: center; justify-content: center;
+}
+
+.page2-c-left-div img {
+    border-radius: 25%; width: 90%;
+}
+
+.page2-c-mid {
+    width: 20%; height: 100%;
+}
+
+.page2-c-mid div {
+    margin: 0 auto; width: 50%; height: 22%; margin-top: 1%;margin-bottom: 1%;background: white; border-radius: 50%; border: 3px solid grey;display: flex; align-items: center; justify-content: center; cursor: pointer;
+}
+.page2-c-mid div p {
+    text-align: center; margin: 0;
+}
+
+.page2-c-right {
+    width: 50%; height: 100%;
+}
+
+.page2-c-right h1 {
+    margin: 0;
+}
+
+.page2-c-right-content {
+    height: auto; margin-top: 15px;
+}
+
+.page2-c-right-content .p-left {
+    margin: 0; margin-left: 15px; text-align: left ;font-size: 12pt; font-weight: bolder;
+}
+
+.page2-c-right-content .p-right {
+    margin: 0; text-align: right ;font-size: 10pt;
+}
+
+#Front-End {
+    height: 90%; width: 90%; margin-left: 5%;
+}
+#Front-End div {
+    display: flex; justify-content: center; width: 100%; height: 50%;
+}
+
+.page2-c-right-content img {
+    width: 25%;
+}

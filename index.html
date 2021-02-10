@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lee Seung Won's Portfolio</title>
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/sub-style.css">
+    <link rel="stylesheet" href="css/page1.css">
+    <link rel="stylesheet" href="css/page2.css">
+    
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+
+</head>
+<body>
+    <!-- <iframe src="view/header.html" style="width: 100%; height: 100%;"></iframe> -->
+    <header>
+        <div class="headerdiv">
+           <div id="home-icon">
+                <i class="fas fa-igloo fa-3x"></i>
+                <span>UJUNJA</span>
+            </div>
+            <div id="menubar" class="menubar">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            
+            <div id="menus">
+                    <h1 onclick="focusing('page1')">HOME</h1>
+                    <h1 onclick="focusing('page2')">ABOUT</h1>
+                    <h1 onclick="focusing('page1')">PROJECTS</h1>
+                    <h1 onclick="focusing('page1')">CONTACT</h1>
+            </div>
+            <div id="whitecover"></div>
+        </div>
+    </header>
+    <section id="page1">
+        <div class="home-introduction">
+            <div class="typing-div">
+                <h1></h1>
+                <h1></h1>
+                <h1></h1>
+                <h1></h1>
+                <h1></h1>
+                <h1></h1>
+            </div>
+            <div class="no-typing-div">
+                <h1></h1>
+                <h1></h1>
+                <h1></h1>
+                <h1></h1>
+                <h1></h1>
+                <h1></h1>
+            </div>
+            <div  class="no-typing-div">
+                <h1></h1>
+                <h1></h1>
+                <h1></h1>
+                <h1></h1>
+                <h1></h1>
+                <h1></h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="page2" style="display: none;">
+        <div class="page2-div">
+            <div class="page2-container">
+                <div class="page2-c-left">
+                    <div class="page2-c-left-div">
+                        <img src="img/lswn.jpg" >
+                    </div>
+                </div>
+                <div class="page2-c-mid">
+                    <div onclick="aboutContents('career_awards')">
+                        <p>Career<br>Awards</p>
+                    </div>
+                    <div onclick="aboutContents('Front-End')">
+                        <p>Technique<br>Front-End</p>
+                    </div>
+                    <div onclick="aboutContents('Back-End')">
+                        <p>Technique<br>Back-End</p>
+                    </div>
+                    <div onclick="aboutContents('Etc')">
+                        <p>Technique<br>Etc</p>
+                    </div>
+                </div>
+                <div class="page2-c-right" id="technique">
+                        <h1>Front-End</h1>
+                        <div class="page2-c-right-content">
+                            <div id="Front-End">
+                                <div>   
+                                    <img src="img/technique/html.png">
+                                    <img src="img/technique/css.png">
+                                    <img src="img/technique/js.png">
+                                    <img src="img/technique/jquery.png">
+                                </div>
+                                <div>   
+                                    <img src="img/technique/axios.png">
+                                    <img src="img/technique/sass.png">
+                                    <img src="img/technique/bootstrap.png">
+                                </div>
+                            </div>
+                            <div id="Back-End" style="display: none; justify-content: center;">
+                                    <img src="img/technique/java.png">
+                                    <img src="img/technique/spring.png">
+                                    <img src="img/technique/oracle.png">
+                            </div>
+                            <div id="Etc"  style="display: none; justify-content: center;">
+                                    <img src="img/technique/arcgis.png">
+                                    <img src="img/technique/qgis.png">
+                                    <img src="img/technique/geojson.png">
+                                    <img src="img/technique/kakaomap.png">
+                            </div>
+                        </div>
+                </div>
+                <div class="page2-c-right" id="career_awards" style="display: none;">
+                        <h1>Career</h1>
+                        <div class="page2-c-right-content">
+                            <p class="p-left">2020-02 ~ 2020-10</p>
+                            <p class="p-right">마이크로 서비스기반 프론트엔드 웹개발자 양성 과정</p>
+                        </div>        
+                        <div class="page2-c-right-content">
+                            <p class="p-left">2017-03 ~ 2019-02</p>
+                            <p class="p-right">창원대학교 환경공학과 석사 졸업</p>
+                        </div>
+                        <div class="page2-c-right-content">
+                            <p class="p-left">2010-03 ~ 2017-02</p>
+                            <p class="p-right">창원대학교 환경공학과 및 토목공학과 학사 졸업</p>
+                        </div>
+
+                        <h1>Awards</h1>
+                        <div class="page2-c-right-content">
+                            <p class="p-left">2019.02</p>
+                            <p class="p-right">표창장 / 한국지리정보학회</p>
+                        </div>
+                        <div class="page2-c-right-content">
+                            <p class="p-left">2018.11</p>
+                            <p class="p-right">우수논문상 / 한국지리정보학회, 한국지형공간정보학회, 한국공간정보학회</p>
+                        </div>
+                        <div class="page2-c-right-content">
+                            <p class="p-left">2017.11</p>
+                            <p class="p-right">공간정보 캡스톤 디자인 우수상 / 한국지리정보학회</p>
+                        </div>
+                        <div class="page2-c-right-content">
+                            <p class="p-left">2015.12</p>
+                            <p class="p-right">지식재산권 활용 비즈니스 모델 사업화 아이템 경진대회 우수상 / 창원대학교 산학협력단</p>
+                        </div>
+                </div>
+         
+            </div>
+        </div>
+    </section>
+
+    <section id="page3" style="display: none; background: green;">
+
+    </section>
+
+    <section id="page4" style="display: none; background: blue;">
+
+    </section>
+
+    <div id="down-arrow">
+        <i class="far fa-caret-square-down fa-4x" onclick="changeView()"></i>
+    </div>
+
+    <script type="text/javascript">
+        var menubar = document.getElementById('menubar');
+        menubar.addEventListener('click', function() {
+            if(this.className == 'menubar') {
+                this.className = 'activebar';
+                const bars = this.querySelectorAll('div');
+                for(let i = 0; i < bars.length; i++) {
+                    bars[i].className = 'bar' + (i + 1);
+                }
+                document.getElementById('whitecover').style.width = '0%';
+            }
+            else {
+                this.className = 'menubar';
+                const bars = this.querySelectorAll('div');
+                for(let i = 0; i < bars.length; i++) {
+                    bars[i].className = 'bar';
+                }
+                document.getElementById('whitecover').style.width = '700px';
+            }
+        });
+
+        document.getElementById('home-icon').addEventListener('click', function() {
+           location.href = 'index.html';
+        });
+       
+        function changeView(key) {
+            const sections = document.querySelectorAll('section');
+            for(let i = 0; i < sections.length; i++) {
+                if(sections[i].style.display != 'none') {
+                    sections[i].style.display = 'none';
+                    sections[i + 1].style.display = '';
+                    return false;
+                }
+            }
+        }
+
+        function focusing(focusId) {
+            const sections = document.querySelectorAll('section');
+            for(let i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
+            document.getElementById(focusId).style.display = '';
+        }
+
+
+        function aboutContents(aboutkey) {
+            let contentDivs = document.querySelectorAll('.page2-c-right-content div')
+            
+            switch(aboutkey) {
+                case 'Front-End': case 'Back-End': case 'Etc':
+                    
+                    document.querySelector('#career_awards').style.display == 'none';
+
+                    for(let i = 0; i < contentDivs.length; i++) {
+                        contentDivs[i].style.display = 'none';
+                    }
+                    document.querySelector('#' + aboutkey).style.display = '';
+                    break;
+                case 'career_awards':
+                    for(let i = 0; i < contentDivs.length; i++) {
+                        contentDivs[i].style.display = 'none';
+                    }
+
+                    document.querySelector('#career_awards').style.display == '';
+                    break;
+            }
+        }
+
+    </script>
+    <script type="text/javascript" src="js/typing.js"></script>
+</body>
+</html>
