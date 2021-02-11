@@ -23,9 +23,36 @@
     width: 20%; height: 100%;
 }
 
-.page2-c-mid div {
+/* .page2-c-mid div {
     margin: 0 auto; width: 50%; height: 22%; margin-top: 1%;margin-bottom: 1%;background: white; border-radius: 50%; border: 3px solid grey;display: flex; align-items: center; justify-content: center; cursor: pointer;
+} */
+
+.page2-c-mid div {
+    background-color: #f7f7f7;
+    background-image: linear-gradient(#f7f7f7, #e7e7e7);
+    border-radius: 50%;
+    box-shadow: 0 3px 8px #aaa, inset 0 2px 3px #fff;
+    color: #878787;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poiret One', cursive;
+    text-decoration: none;
+    position: relative;
+    width: 110px; 
+    height: 100px; 
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
+
+
+.page2-c-mid div:hover {
+    transform: scale(1.2, 1.2);
+	transition: all 1s ease 0s;
+}
+
 .page2-c-mid div p {
     text-align: center; margin: 0;
 }
@@ -50,10 +77,10 @@
     margin: 0; text-align: right ;font-size: 10pt;
 }
 
-#Front-End {
+.right-centent {
     height: 90%; width: 90%; margin-left: 5%;
 }
-#Front-End div {
+#Front-End div, #Back-End, #Etc {
     display: flex; justify-content: center; width: 100%; height: 50%;
 }
 

@@ -8,13 +8,17 @@
     <link rel="stylesheet" href="css/sub-style.css">
     <link rel="stylesheet" href="css/page1.css">
     <link rel="stylesheet" href="css/page2.css">
+    <link rel="stylesheet" href="css/page3.css">
+    <link rel="stylesheet" href="css/page4.css">
     
     <!-- icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
 
+    <!-- emailJs -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
 </head>
 <body>
-    <!-- <iframe src="view/header.html" style="width: 100%; height: 100%;"></iframe> -->
     <header>
         <div class="headerdiv">
            <div id="home-icon">
@@ -30,8 +34,8 @@
             <div id="menus">
                     <h1 onclick="focusing('page1')">HOME</h1>
                     <h1 onclick="focusing('page2')">ABOUT</h1>
-                    <h1 onclick="focusing('page1')">PROJECTS</h1>
-                    <h1 onclick="focusing('page1')">CONTACT</h1>
+                    <h1 onclick="focusing('page3')">PROJECTS</h1>
+                    <h1 onclick="focusing('page4')">CONTACT</h1>
             </div>
             <div id="whitecover"></div>
         </div>
@@ -87,10 +91,10 @@
                         <p>Technique<br>Etc</p>
                     </div>
                 </div>
-                <div class="page2-c-right" id="technique">
+                <div class="page2-c-right" id="technique" style="display: none;">
                         <h1>Front-End</h1>
                         <div class="page2-c-right-content">
-                            <div id="Front-End">
+                            <div id="Front-End" class="right-centent"  style="display: none;">
                                 <div>   
                                     <img src="img/technique/html.png">
                                     <img src="img/technique/css.png">
@@ -103,12 +107,12 @@
                                     <img src="img/technique/bootstrap.png">
                                 </div>
                             </div>
-                            <div id="Back-End" style="display: none; justify-content: center;">
+                            <div id="Back-End" class="right-centent" style="display: none; justify-content: center;">
                                     <img src="img/technique/java.png">
                                     <img src="img/technique/spring.png">
                                     <img src="img/technique/oracle.png">
                             </div>
-                            <div id="Etc"  style="display: none; justify-content: center;">
+                            <div id="Etc" class="right-centent" style="display: none; justify-content: center;">
                                     <img src="img/technique/arcgis.png">
                                     <img src="img/technique/qgis.png">
                                     <img src="img/technique/geojson.png">
@@ -116,7 +120,7 @@
                             </div>
                         </div>
                 </div>
-                <div class="page2-c-right" id="career_awards" style="display: none;">
+                <div class="page2-c-right" id="career_awards">
                         <h1>Career</h1>
                         <div class="page2-c-right-content">
                             <p class="p-left">2020-02 ~ 2020-10</p>
@@ -154,87 +158,57 @@
         </div>
     </section>
 
-    <section id="page3" style="display: none; background: green;">
+    <section id="page3" style="display: none;">
+        <div style="width: 900px; height: 450px; margin: 0 auto; background-color: skyblue; display: flex; align-items: center;">
+            <div style="width: 30%; height: 300px;">
 
+            </div>
+            <div style="width: 70%;">
+
+            </div>
+        </div>
     </section>
 
-    <section id="page4" style="display: none; background: blue;">
+    <section id="page4" style="display: none;">
+        <div class="p4-container">
+            <div class="p4-title-div">
+                <h1 class="p4-title">CONTACT</h1>
+            </div>
 
+            <form id="email-form" onsubmit="return emailSubmit();" class="p4-form">
+                <input type="hidden" name="to_name" value="이승원">
+                <div class="p4-form-left">
+                    <div class="left-content">
+                        <h3>From_Name</h3>
+                        <input type="text" name="from_name" placeholder="Your's name" required>
+                    </div>
+                    <div class="left-content">
+                        <h3>Email</h3>
+                        <input type="email" name="email" placeholder="Your's email" required>
+                    </div>
+                    <div class="left-content">
+                        <h3>Phone</h3>
+                        <input id="phone_input" type="string" name="phone_num" placeholder="Only number! ex) 01012348495" required>
+                    </div>
+                </div>
+                <div class="p4-form-right">
+                    <h3>Message</h3>
+                    <textarea name="message" placeholder="Please write The Message" maxlength="500" required></textarea>
+                </div>
+                <input type="submit" value="Send">
+            </form>
+        </div>
     </section>
 
-    <div id="down-arrow">
-        <i class="far fa-caret-square-down fa-4x" onclick="changeView()"></i>
+    <div class="arrow-div">
+        <i id="upper-arrow" class="far fa-caret-square-up fa-4x"  onclick="changeView('up')" style="display: none;"></i>
+        <i id="down-arrow" class="far fa-caret-square-down fa-4x" onclick="changeView('down')"></i>
     </div>
 
-    <script type="text/javascript">
-        var menubar = document.getElementById('menubar');
-        menubar.addEventListener('click', function() {
-            if(this.className == 'menubar') {
-                this.className = 'activebar';
-                const bars = this.querySelectorAll('div');
-                for(let i = 0; i < bars.length; i++) {
-                    bars[i].className = 'bar' + (i + 1);
-                }
-                document.getElementById('whitecover').style.width = '0%';
-            }
-            else {
-                this.className = 'menubar';
-                const bars = this.querySelectorAll('div');
-                for(let i = 0; i < bars.length; i++) {
-                    bars[i].className = 'bar';
-                }
-                document.getElementById('whitecover').style.width = '700px';
-            }
-        });
-
-        document.getElementById('home-icon').addEventListener('click', function() {
-           location.href = 'index.html';
-        });
-       
-        function changeView(key) {
-            const sections = document.querySelectorAll('section');
-            for(let i = 0; i < sections.length; i++) {
-                if(sections[i].style.display != 'none') {
-                    sections[i].style.display = 'none';
-                    sections[i + 1].style.display = '';
-                    return false;
-                }
-            }
-        }
-
-        function focusing(focusId) {
-            const sections = document.querySelectorAll('section');
-            for(let i = 0; i < sections.length; i++) {
-                sections[i].style.display = 'none';
-            }
-            document.getElementById(focusId).style.display = '';
-        }
-
-
-        function aboutContents(aboutkey) {
-            let contentDivs = document.querySelectorAll('.page2-c-right-content div')
-            
-            switch(aboutkey) {
-                case 'Front-End': case 'Back-End': case 'Etc':
-                    
-                    document.querySelector('#career_awards').style.display == 'none';
-
-                    for(let i = 0; i < contentDivs.length; i++) {
-                        contentDivs[i].style.display = 'none';
-                    }
-                    document.querySelector('#' + aboutkey).style.display = '';
-                    break;
-                case 'career_awards':
-                    for(let i = 0; i < contentDivs.length; i++) {
-                        contentDivs[i].style.display = 'none';
-                    }
-
-                    document.querySelector('#career_awards').style.display == '';
-                    break;
-            }
-        }
-
-    </script>
-    <script type="text/javascript" src="js/typing.js"></script>
+    <script type="text/javascript" src="js/header.js"></script>
+    <script type="text/javascript" src="js/allpage-arrow.js"></script>
+    <script type="text/javascript" src="js/page1-typing.js"></script>
+    <script type="text/javascript" src="js/page2-views.js"></script>
+    <script type="text/javascript" src="js/page4-form.js"></script>
 </body>
 </html>

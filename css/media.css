@@ -18,7 +18,7 @@ html, body {
     background: whitesmoke;
     padding: 0;
 }
-body #page2 {
+body #page2, body #page3 {
     height: 450px !important;
     margin-bottom: 10px;
 }
@@ -37,7 +37,7 @@ header {
         position: relative;
         background: whitesmoke;
     }
-    body #page2 {
+    body #page2, body #page3 {
         height: 450px !important;
         margin-bottom: 10px;
     }
@@ -59,7 +59,7 @@ header {
         position: relative;
         background: whitesmoke;
     }
-    body #page2 {
+    body #page2, body #page3 {
         height: 450px !important;
         margin-bottom: 10px;
     }
@@ -81,7 +81,7 @@ header {
         position: relative;
         background: whitesmoke;
     }
-    body #page2 {
+    body #page2, body #page3 {
         height: 450px !important;
         margin-bottom: 10px;
     }
