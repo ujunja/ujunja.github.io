@@ -175,6 +175,7 @@
                 <div class="p3-project-right">
                     
                     <div class="p3-t-change">
+                        <button class="p3-technique"><a onclick="gitPopup('protfolio')" href="#">GITHUB<br>LINK</a></button>
                         <button class="p3-technique" onclick="tchange(this, 'project')">Project<br>Techniques</button>
                         <button class="p3-technique" onclick="tchange(this, 'myown')">My own<br>Development</button>
                     </div>
@@ -207,6 +208,7 @@
                 
                 <div class="p3-project-right">
                     <div class="p3-t-change">
+                        <button class="p3-technique"><a onclick="gitPopup('drumtong')" href="#">GITHUB<br>LINK</a></button>
                         <button class="p3-technique" onclick="tchange(this, 'project')">Project<br>Techniques</button>
                         <button class="p3-technique" onclick="tchange(this, 'myown')">My own<br>Development</button>
                     </div>
@@ -237,6 +239,7 @@
                 </div>
                 <div class="p3-project-right">
                     <div class="p3-t-change">
+                        <button class="p3-technique"><a onclick="gitPopup('drumtong')" href="#">GITHUB<br>LINK</a></button>
                         <button class="p3-technique" onclick="tchange(this, 'project')">Project<br>Techniques</button>
                         <button class="p3-technique" onclick="tchange(this, 'myown')">My own<br>Development</button>
                     </div>
@@ -355,6 +358,18 @@
             else {
                 tchangediv[0].style.display = 'none';
                 tchangediv[1].style.display = '';
+            }
+        }
+        function gitPopup(key) {
+            if (key == 'drumtong') {
+                const url = 'https://github.com/ujunja/DrumTong.git';
+                const name = 'DRUMTONG';
+                window.open(url, name);
+            }
+            else if(key == 'protfolio') {
+                const url = 'https://github.com/ujunja/ujunja.github.io.git';
+                const name = 'PROTFOLIO';
+                window.open(url, name);
             }
         }
     </script>
