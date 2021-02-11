@@ -159,12 +159,108 @@
     </section>
 
     <section id="page3" style="display: none;">
-        <div style="width: 900px; height: 450px; margin: 0 auto; background-color: skyblue; display: flex; align-items: center;">
-            <div style="width: 30%; height: 300px;">
-
+        <div class="p3-container">
+            
+            <div id="p3-prev" class="p3-arrow" style="display: none;">
+                <i class="far fa-caret-square-left fa-3x" onclick="projectChange('left')"></i>
+            </div>            
+            <div id="p3-next" class="p3-arrow">
+                <i class="far fa-caret-square-right fa-3x"  onclick="projectChange('right')"></i>
+            </div>            
+            
+            <div id="project0" class="p3-project">
+                <div class="p3-project-left">
+                    <img src="img/projects/project0.PNG">
+                </div>
+                <div class="p3-project-right">
+                    
+                    <div class="p3-t-change">
+                        <button class="p3-technique" onclick="tchange(this, 'project')">Project<br>Techniques</button>
+                        <button class="p3-technique" onclick="tchange(this, 'myown')">My own<br>Development</button>
+                    </div>
+                    <div class="p3-t-change-div">
+                        <h1 class="p3-main-h">Project Techniques</h1>
+                        <h3 class="p3-sub-h">Front-End</h3>
+                        <p class="p3-sub-detail">HTML / CSS / JAVASCRIPT</p>
+                        <h3 class="p3-sub-h">Etc</h3>
+                        <p class="p3-sub-detail">EMAIL JS</p>
+                    </div>
+                    <div class="p3-t-change-div" style="display: none;">
+                        <h1 class="p3-main-h">My own Development</h1>
+                        <h3 class="p3-sub-h">HOME - 타이핑</h3>
+                        <p class="p3-sub-detail">setTimeout을 활용하여 한국어, 일본어, 영어로 작성한
+                                                    문장을 0.1초 단위로 한글자씩 타이핑하도록 제작함</p>
+                        <h3 class="p3-sub-h">CONTACT - 메일 보내기</h3>
+                        <p class="p3-sub-detail">EMAIL JS 라이브러리를 사용하여 개발자의 GMAIL로
+                                                    작성한 메세지가 전송되도록 제작함</p>
+                    </div>
+                </div>
             </div>
-            <div style="width: 70%;">
 
+            <div id="project1" class="p3-project" style="display: none;">
+
+       
+
+                <div class="p3-project-left">
+                    <img src="img/projects/project1.PNG">
+                </div>
+                
+                <div class="p3-project-right">
+                    <div class="p3-t-change">
+                        <button class="p3-technique" onclick="tchange(this, 'project')">Project<br>Techniques</button>
+                        <button class="p3-technique" onclick="tchange(this, 'myown')">My own<br>Development</button>
+                    </div>
+                    <div class="p3-t-change-div">
+                        <h1 class="p3-main-h">Project Techniques</h1>
+                        <h3 class="p3-sub-h">Front-End</h3>
+                        <p class="p3-sub-detail">HTML / CSS / JAVASCRIPT / jQUERY<br>AXIOS</p>
+                        <h3 class="p3-sub-h">Back-End</h3>
+                        <p class="p3-sub-detail">JAVA / SPRING / SQL<br></p>
+                        <h3 class="p3-sub-h">Etc</h3>
+                        <p class="p3-sub-detail">ARC GIS / QGIS / GEOJSON / KAKAOMAP / GOOGLE CHART</p>
+                    </div>
+                    <div class="p3-t-change-div" style="display: none;">
+                        <h1 class="p3-main-h">My own Development</h1>
+                        <h3 class="p3-sub-h">SEARCH - 지도</h3>
+                        <p class="p3-sub-detail">GIS 프로그램으로 행정구역 정보를 담은 SHP 파일을
+                                                     GEOJSON 및 CSV 파일로 변환하여 폴리곤 활성 및 SQL 업로드하였고,
+                                                     지도 제공은 카카오맵 라이브러리를 사용함</p>
+                        <h3 class="p3-sub-h">DETAIL - 리뷰관리 및 고객평점</h3>
+                        <p class="p3-sub-detail">고객이 작성한 리뷰를 볼 수 있는 화면과 동작을 구현하였고,
+                                                    구글차트와 별점을 사용하여 고객평점을 제작함</p>
+                    </div>
+                </div>
+            </div>
+            <div id="project2" class="p3-project" style=" display: none;">
+                <div class="p3-project-left">
+                    <img src="img/projects/project2.PNG">
+                </div>
+                <div class="p3-project-right">
+                    <div class="p3-t-change">
+                        <button class="p3-technique" onclick="tchange(this, 'project')">Project<br>Techniques</button>
+                        <button class="p3-technique" onclick="tchange(this, 'myown')">My own<br>Development</button>
+                    </div>
+                    <div class="p3-t-change-div">
+                        <h1 class="p3-main-h">Project Techniques</h1>
+                        <h3 class="p3-sub-h">Front-End</h3>
+                        <p class="p3-sub-detail">HTML / CSS / JAVASCRIPT / jQUERY<br>AXIOS</p>
+                        <h3 class="p3-sub-h">Back-End</h3>
+                        <p class="p3-sub-detail">JAVA / SPRING / SQL<br></p>
+                        <h3 class="p3-sub-h">Etc</h3>
+                        <p class="p3-sub-detail">GOOGLE CHART / DAUM MAP API</p>
+                    </div>
+                    <div class="p3-t-change-div" style="display: none;">
+                        <h1 class="p3-main-h">My own Development</h1>
+                        <h3 class="p3-sub-h">DESIGN</h3>
+                        <p class="p3-sub-detail">메인화면, 온라인계약, 개인정보수정, 서브관리 등등의 페이지 디자인을 제작함</p>
+                        <h3 class="p3-sub-h">ASYNC</h3>
+                        <p class="p3-sub-detail">AXIOS 라이브러리를 활용하여 비동기 작업이 필요한 기능을 구현함</p>
+                        <h3 class="p3-sub-h">SUBMANAGEMENT</h3>
+                        <p class="p3-sub-detail">고객리뷰, 온라인계약, 결제수단, 수입통계, 주문현황 관리 기능을 구현함</p>
+                        <h3 class="p3-sub-h">CONTRACT</h3>
+                        <p class="p3-sub-detail">온라인 계약시 입력하는 과정들에 필요한 기능들을 구현함</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -210,5 +306,57 @@
     <script type="text/javascript" src="js/page1-typing.js"></script>
     <script type="text/javascript" src="js/page2-views.js"></script>
     <script type="text/javascript" src="js/page4-form.js"></script>
+    <script type="text/javascript">
+        function projectChange(key) {
+            const p3Projects = document.querySelectorAll('.p3-project');
+            if(key == 'right') {
+                for(let i = 0; i < p3Projects.length; i++) {
+                    if(p3Projects[i].style.display != 'none') {
+                        p3Projects[i].style.display = 'none';
+                        p3Projects[i+1].style.display = 'flex';
+                        projectArrowShow();
+                        return false;
+                    }
+                }    
+            }
+            else {
+                for(let i = 0; i < p3Projects.length; i++) {
+                    if(p3Projects[i].style.display != 'none') {
+                        p3Projects[i].style.display = 'none';
+                        p3Projects[i-1].style.display = 'flex';
+                        projectArrowShow();
+                        return false;
+                    }
+                }    
+            }
+        }
+
+        function projectArrowShow() {
+            const p3Projects = document.querySelectorAll('.p3-project');
+            if(p3Projects[0].style.display != 'none') {
+                document.getElementById('p3-prev').style.display = 'none';
+            }
+            else if(p3Projects[p3Projects.length - 1].style.display != 'none') {
+                document.getElementById('p3-next').style.display = 'none';
+            }
+            else {
+                document.getElementById('p3-prev').style.display = 'flex';
+                document.getElementById('p3-next').style.display = 'flex';
+            }
+        }
+
+        function tchange(object, tkey) {
+            const tchangediv = object.parentNode.parentNode.querySelectorAll('.p3-t-change-div');
+            console.log(tchangediv);
+            if(tkey == 'project') {
+                tchangediv[0].style.display = '';
+                tchangediv[1].style.display = 'none';
+            }
+            else {
+                tchangediv[0].style.display = 'none';
+                tchangediv[1].style.display = '';
+            }
+        }
+    </script>
 </body>
 </html>
