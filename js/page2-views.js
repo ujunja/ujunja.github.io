@@ -1,7 +1,7 @@
 
 
         function aboutContents(aboutkey) {
-            let contentDivs = document.querySelectorAll('.page2-c-right-content .right-centent')
+            let contentDivs = document.querySelectorAll('.page2-c-right-content .right-content')
             
             switch(aboutkey) {
                 case 'Front-End': case 'Back-End': case 'Etc':
