@@ -87,3 +87,17 @@
 .page2-c-right-content img {
     width: 25%;
 }
+
+    
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .page2-c-left {
+        height: 424px !important; margin-top: 30px;
+    }
+    .page2-c-left-div {
+        height: 400px !important;
+    }
+    .page2-c-right-content .p-right {
+        font-size: 8pt !important;
+    }
+}

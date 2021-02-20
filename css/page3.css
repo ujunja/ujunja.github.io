@@ -92,3 +92,18 @@
 .p3-container .p3-project .p3-project-right .p3-t-change-div .p3-sub-detail {
     margin-left: 25px;    margin-top: 3px; margin-bottom: 3px;
 }
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .p3-container .p3-project .p3-project-right .p3-t-change .p3-technique {
+        width: 100px !important;
+    }
+    
+    .p3-container .p3-project .p3-project-left {
+        width: 35% !important; margin-left: 15%;
+    }
+
+    .p3-container .p3-project .p3-project-right {
+        width: 40% !important;
+    }
+}
