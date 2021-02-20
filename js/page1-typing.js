@@ -27,10 +27,9 @@ var introductions = [
 ]
 ]
 
-let change_count = 0;
-let input_count = 0;
-let arr_count = 0;
-let clearObject;
+let change_count = 0;   
+let input_count = 0;    // 문장의 줄을 구별해주는 함수
+let arr_count = 0;      // 일본어, 한국어, 영어를 구별해주는 변수
 
 function typingWriter() {
     
@@ -43,7 +42,7 @@ function typingWriter() {
         change_count = 0;
         input_count = 0;
         arr_count++;
-        return setTimeout(deleteTyping, 10000);
+        return setTimeout( deleteTyping , 10000);
     }
 
     typingtags[change_count].innerHTML += introductions[arr_count][change_count].split("")[input_count];

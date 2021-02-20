@@ -91,3 +91,19 @@
         transform: translate(0, 10px);
         transition: all 1s ease 0s;
     }
+
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        #whitecover {
+            position: absolute;height: 50px; width: 400px; top: 50px; right: 100px; transition: 3s; background: whitesmoke; z-index: 100;
+        }
+
+        #menus {
+            position: absolute;height: 50px; width: auto; top: 50px; right: 100px; z-index: 0; display: flex; align-items: center;
+        }
+    
+        #menus h1 {
+            display: inline-block; margin: 0; margin-right: 30px; z-index: 0; cursor: pointer; font-size: 11pt;
+        }
+    
+    }

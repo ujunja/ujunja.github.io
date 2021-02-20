@@ -117,6 +117,16 @@ header {
             min-width: 768px;
             height: 60%;
         }
+        body #page2, body #page3 {
+            height: 450px !important;
+            margin-bottom: 10px;
+        }
+        header {
+            width: 768px;
+        }
+        #page2 .page2-div {
+            width: 768px;
+        }
     }
     
     /*
