@@ -42,7 +42,7 @@
 }
 
 .p3-container .p3-project .p3-project-left img {
-    width: 100%; height: 100%; vertical-align: middle;
+    width: 100%; height: 100%; vertical-align: middle; cursor: pointer;
 }
 
 .p3-container .p3-project .p3-project-right {
